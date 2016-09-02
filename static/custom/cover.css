@@ -1,3 +1,10 @@
+.body{
+    scroll-behavior: smooth;
+}
+.row-padding{
+    padding-bottom:15px;
+    padding-top: 5px;
+}
 .navigation{
     width: 100%;
     top: 691px;
@@ -7,7 +14,8 @@
     color: #fff;
     border-radius: 0px;
     position: absolute;
-    z-index:10;
+    z-index: 10;
+   
 }
 
 .affix {
@@ -16,6 +24,9 @@
       z-index: 10;
 }
 
+/*.affix + .container-fluid {
+      padding-top: 70px;
+}*/
 .icon-bar{
     background: #fff;
 }
@@ -34,10 +45,11 @@
     top: 0px;
     width: 100%;
 }
-
 .navigation + .mover{
-    padding-top:40px;
+    padding-top: 40px;
+
 }
+
 #features{
     background: url('../img/7.png');
     background-attachment: fixed;
@@ -65,3 +77,98 @@
    background-image: -moz-linear-gradient(top, #ffffff, #f3f3f3);
    background-image: linear-gradient(to bottom, #ffffff, #f3f3f3);
 }
+
+/* image overlays */
+.image{
+    height: 200px;
+    width: 300px;
+    transition: width 1.5s, height 1.5s;
+    position: relative;
+    
+}
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    background-color: #000;
+    opacity: 0.4;
+    display: none;
+}
+.overlay-text{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+    z-index:10;
+    line-height: 100px;
+    display: none;
+    
+}
+.image:hover{
+    width: 320px;
+    height: 210px;
+}
+.image:hover > .overlay{
+    display: inline-block;
+}
+.image:hover > .overlay-text{
+    display: inline-block;
+}
+#adventure{
+    background-image: url('../img/Bungy-5X1NZ.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#beaches{
+    background-image: url('../img/cathedral-cove-coromandel.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#wildlife{
+    background-image: url('../img/northern-royal-albatross.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#richliving{
+    background-image: url('../img/split-apple-retreat-nelson.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#fitness{
+    background-image: url('../img/aro-ha-wellness-retreat-yoga.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#hobbiton{
+    background-image: url('../img/hobbiton-movie-set-1-(c).jpg');
+    background-size: cover;
+    background-position: center;
+}
+#maori{
+    background-image: url('../img/te-matatini3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#trails{
+    background-image: url('../img/snowfall-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.btn-features:enabled{
+    background-color: transparent;
+    border: 1px solid white;
+    color:#fff;
+}
+.btn-features:active{
+    border: 1px solid orangered;
+    color:orangered;
+}
+
+
+
+
