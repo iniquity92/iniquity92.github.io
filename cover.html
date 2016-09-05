@@ -12,14 +12,14 @@
     <title>Cover Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="static/cover.css" rel="stylesheet">
-    <link href="static/custom/cover.css" rel="stylesheet">
+    <link href="static/css/cover.css" rel="stylesheet">
+    <link href="static/css/custom/cover.css" rel="stylesheet">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico" rel="stylesheet">
 
@@ -115,7 +115,7 @@
                       <div class="overlay"></div>
                       <div class="overlay-text">
                         <h3>Adventure Sports</h3>
-                        <button class="btn btn-features">
+                        <button class="btn btn-features" data-toggle="modal" data-target="#modal" data-title="adventure">
                           <span class="glyphicon glyphicon-search"></span>
                         </button>
                       </div>
@@ -126,7 +126,7 @@
                       <div class="overlay"></div>
                       <div class="overlay-text">
                         <h3>Beautiful Beaches</h3>
-                        <button class="btn btn-features">
+                        <button class="btn btn-features" data-toggle="modal" data-target="#modal" data-title="beaches">
                           <span class="glyphicon glyphicon-search"></span>
                         </button>
                       </div>
@@ -137,7 +137,7 @@
                       <div class="overlay"></div>
                       <div class="overlay-text">
                         <h3>Amazing Wildlife</h3>
-                        <button class="btn btn-features">
+                        <button class="btn btn-features" data-toggle="modal" data-target="#modal" data-title="wildlife">
                           <span class="glyphicon glyphicon-search"></span>
                         </button>
                       </div>
@@ -148,7 +148,7 @@
                       <div class="overlay"></div>
                       <div class="overlay-text">
                         <h3>Fine Living</h3>
-                        <button class="btn btn-features">
+                        <button class="btn btn-features" data-toggle="modal" data-target="#modal" data-title="fineliving">
                           <span class="glyphicon glyphicon-search"></span>
                         </button>
                       </div>
@@ -161,7 +161,7 @@
                       <div class="overlay"></div>
                       <div class="overlay-text">
                         <h3>Health and Fitness</h3>
-                        <button class="btn btn-features">
+                        <button class="btn btn-features" data-toggle="modal" data-target="#modal" data-title="fitness">
                           <span class="glyphicon glyphicon-search"></span>
                         </button>
                       </div>
@@ -172,7 +172,7 @@
                       <div class="overlay"></div>
                       <div class="overlay-text">
                         <h3>Middle Earth</h3>
-                        <button class="btn btn-features">
+                        <button class="btn btn-features" data-toggle="modal" data-target="#modal" data-title="hobbits">
                           <span class="glyphicon glyphicon-search"></span>
                         </button>
                       </div>
@@ -183,7 +183,7 @@
                       <div class="overlay"></div>
                       <div class="overlay-text">
                         <h3>Native Culture</h3>
-                        <button class="btn btn-features">
+                        <button class="btn btn-features" data-toggle="modal" data-target="#modal" data-title="maori">
                           <span class="glyphicon glyphicon-search"></span>
                         </button>
                       </div>
@@ -194,7 +194,7 @@
                       <div class="overlay"></div>
                       <div class="overlay-text">
                         <h3>Trekking Trails</h3>
-                        <button class="btn btn-features">
+                        <button class="btn btn-features" data-toggle="modal" data-target="#modal" data-title="trails">
                           <span class="glyphicon glyphicon-search"></span>
                         </button>
                       </div>
@@ -251,32 +251,32 @@
               <div class="col-md-6 social"><!-- begin social -->
                 <div>
                   <span class="social-logo">
-                    <a href=""><img src="static/img/logo/FB-f-Logo__blue_50.png" height="50" width="50"></a>
+                    <a href=""><img src="img/logo/FB-f-Logo__blue_50.png" height="50" width="50"></a>
                   </span>
                 </div>
                 <div>
                   <span class="social-logo">
-                    <a href=""><img src="static/img/logo/Twitter_Social_Icon_Rounded_Square_Color.png" height="50" width="50"></a>
+                    <a href=""><img src="img/logo/Twitter_Social_Icon_Rounded_Square_Color.png" height="50" width="50"></a>
                   </span>
                 </div>
                 <div>
                   <span class="social-logo">
-                    <a href=""><img src="static/img/logo/Instagram-v051916.png" height="50" width="50"></a>
+                    <a href=""><img src="img/logo/Instagram-v051916.png" height="50" width="50"></a>
                   </span>
                 </div>
                 <div>
                   <span class="social-logo">
-                    <a href=""><img src="static/img/logo/stumbleupon.png" height="50" width="50"></a>
+                    <a href=""><img src="img/logo/stumbleupon.png" height="50" width="50"></a>
                   </span>
                 </div>
                 <div>
                   <span class="social-logo">
-                    <a href=""><img src="static/img/logo/Pinterest-badge-144px.png" height="50" width="50"></a>
+                    <a href=""><img src="img/logo/Pinterest-badge-144px.png" height="50" width="50"></a>
                     </span>
                 </div>
                 <div>
                   <span class="social-logo">
-                    <a href=""><img src="static/img/logo/YouTube-icon-full_color.png" height="50" width="71"></a>
+                    <a href=""><img src="img/logo/YouTube-icon-full_color.png" height="50" width="71"></a>
                   </span>
                 </div>
               </div><!--end social -->
@@ -294,6 +294,29 @@
         </div><!-- end footer -->
     
     </div>
+    <!-- modals -->
+
+    <!-- begin modal-->
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title modal-title-text" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body modal-body-text">
+                         ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal -->
+
         
 
        
@@ -304,17 +327,64 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="static/js/jquery.js"></script>
     <!--script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     <!-- smoothscroll.js -->
-    <script src="static/custom/smoothscroll.js"></script>
+    <script src="static/js/custom/smoothscroll.js"></script>
     <script>
       $(function(){
         $('body').scrollspy({ target:'#navigation'});
-      })
+         $("#modal").on('show.bs.modal',function(e){
+            var button = $(e.relatedTarget);
+            var caller = button.data('title');
+            var modal = $(this);
+            //var about;
+            $.ajax({
+              url : "getdetails.php",
+              data : {feature : caller},
+              dataType : "json",
+              method : "GET",
+              success : function(result){
+                //var arr = JSON.parse(data);
+                var about = result['about'];
+                var images = result['images'];
+                var out = "<div class='container-fluid'><div class='row'>";
+                for(i=0;i<images.length;i++){
+                  out += "<div class='col-md-4' style='padding:5px;'>"+
+                  "<div class='modal-image-box'>"+
+                  "<div class='modal-image'>"+ 
+                  "<img src='" + images[i]['uri'] + "' class='img-thumbnail' alt='"+ images[i]['name']+"' height='60' width='100'> "+
+                  "<div class='modal-image-overlay'>"+
+                  "</div>"+ //closed .modal-image-overlay
+                  "<div class='modal-image-overlay-text'>"+
+                  "<a href='" + images[i]['uri'] + "'>"+
+                  "<button class='btn btn-modal-image'>"+
+                  "<span class='glyphicon glyphicon-search'></span>"+
+                  "</button>"+
+                  "</a>"+
+                  "</div>"+ // closed .modal-image-overlay-text
+                  "</div>"+ //closed .modal-image
+                  "<div class='modal-image-box-text'>"+
+                  "<h4>"+ images[i]['name']+"</h4>"+
+                  "<p>"+ images[i]['about']+"</p>"+
+                  "</div>"+ //closed .modal-image-box-text
+                  "</div>"+ //close .modal-image-box
+                  "</div>"; //close .col-md-4 
+                }
+                out += "</div></div>"; //close .row and .container-fluid
+                about += out;
+                modal.find('.modal-title').text(caller.toUpperCase());
+                modal.find('.modal-body').html(about);
+              }
+            });
+            
+        });
+        
+      });
+
     </script>
   </body>
 </html>
