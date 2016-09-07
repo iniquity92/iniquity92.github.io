@@ -33,7 +33,7 @@
 }
 
 .main-photo{
-    background-image: url('/designs/img/holding-hands.jpg');
+    background-image: url('../img/holding-hands.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,7 +64,7 @@
 }
 
 #features{
-    background: url('/designs/img/ohau-snowboarder.jpg');
+    background: url('../img/ohau-snowboarder.jpg');
     background-attachment: fixed;
     background-size: cover;
    
@@ -137,42 +137,42 @@
     display: inline-block;
 }
 #adventure{
-    background-image: url('/designs/img/Bungy-5X1NZ.jpg');
+    background-image: url('../img/Bungy-5X1NZ.jpg');
     background-size: cover;
     background-position: center;
 }
 #beaches{
-    background-image: url('/designs/img/cathedral-cove-coromandel.jpg');
+    background-image: url('../img/cathedral-cove-coromandel.jpg');
     background-size: cover;
     background-position: center;
 }
 #wildlife{
-    background-image: url('/designs/img/northern-royal-albatross.jpg');
+    background-image: url('../img/northern-royal-albatross.jpg');
     background-size: cover;
     background-position: center;
 }
 #richliving{
-    background-image: url('/designs/img/split-apple-retreat-nelson.jpg');
+    background-image: url('../img/split-apple-retreat-nelson.jpg');
     background-size: cover;
     background-position: center;
 }
 #fitness{
-    background-image: url('/designs/img/aro-ha-wellness-retreat-yoga.jpg');
+    background-image: url('../img/aro-ha-wellness-retreat-yoga.jpg');
     background-size: cover;
     background-position: center;
 }
 #hobbiton{
-    background-image: url('/designs/img/hobbiton-movie-set-1-(c).jpg');
+    background-image: url('../img/hobbiton-movie-set-1-(c).jpg');
     background-size: cover;
     background-position: center;
 }
 #maori{
-    background-image: url('/designs/img/te-matatini3.jpg');
+    background-image: url('../img/te-matatini3.jpg');
     background-size: cover;
     background-position: center;
 }
 #trails{
-    background-image: url('/designs/img/snowfall-2.jpg');
+    background-image: url('../img/snowfall-2.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -186,7 +186,7 @@
     color:sandybrown;
 }
 #contact{
-    background-image: url("/designs/img/New-Zealand-Aurora-Borellis.jpg");
+    background-image: url("../img/New-Zealand-Aurora-Borellis.jpg");
     background-position:center;
     background-size: cover;
     background-attachment: fixed;
