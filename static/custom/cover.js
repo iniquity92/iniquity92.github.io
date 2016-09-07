@@ -4,7 +4,7 @@ $(function(){
         $('body').scrollspy({ target:'#navigation'});
         $(window).on("load",function(){
                 $.ajax({
-                    url:"json_data.txt",
+                    url:"git_json_data.txt",
                     dataType:"json",
                     method:"GET",
                     success:function(arg){
